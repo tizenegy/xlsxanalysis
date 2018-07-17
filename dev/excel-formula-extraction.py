@@ -5,7 +5,7 @@ from time import gmtime, strftime
 import glob
 
 def checkUnsupportedFunctions(setOfFunctions):
-    open_file = open("unsupported_functions.txt", "r")
+    open_file = open("admin/unsupported_functions.txt", "r")
     stri= ""
     for line in open_file:
         stri+=line 
@@ -20,6 +20,14 @@ def checkUnsupportedFunctions(setOfFunctions):
                 print("Found unsupported function: "+unsup)
                 myset.add(unsup)
     return myset
+
+def writeResultsToExcel():
+    wb = load_workbook(filename='admin/performance_analysis.xlsx')
+    ws = wb.worksheets[0]
+    print(ws.max_row +1)
+    #ws['A1'] = 1
+    #ws.cell(row=2, column=2).value = 2
+    return
 
 # measure execution time
 start_time = time.time()
@@ -85,7 +93,7 @@ currentTime = strftime("%Y-%m-%d %Hh%Mm%Ss", gmtime())
 print("Analysis complete")
 
 # write report
-file = open("Analysis "+currentTime+".txt", "a")
+file = open("analysis/Analysis "+currentTime+".txt", "a")
 file.truncate(0)
 file.write("\n"+"------------------------------------------------")
 file.write("\n"+"Analysis of:        "+str(excel))
@@ -108,6 +116,8 @@ for item in sorted(funcSet):
     file.write(item+"\n")
 
 file.close()
+
+writeResultsToExcel()
 
 print("Execution time: %6.2f seconds" % (time.time() - start_time))
 

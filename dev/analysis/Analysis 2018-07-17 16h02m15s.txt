@@ -15,7 +15,7 @@ References:         34
 Unsupported functions found in sheet:
 
 ImExp
-Gauss
+GAUSS
 
 Unique functions in alphabetical order:
 

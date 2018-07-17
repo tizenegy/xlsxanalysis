@@ -2,24 +2,26 @@
 ------------------------------------------------
 Analysis of:        .\calc.xlsx
 Cells total:        9467
-Cells empty:        8359
+Cells empty:        8358
 Plain data:         79
-Functions:          995
-Unique functions:   7
+Functions:          996
+Unique functions:   8
 References:         34
--> Calculated cells per data cell:    12.59
+-> Calculated cells per data cell:    12.61
 -> Referencing cells per data cell:   0.43
 -> Redundancy of functions:           99%
 ------------------------------------------------
 
 Unsupported functions found in sheet:
 
-Gauss
+ImExp
+GAUSS
 
 Unique functions in alphabetical order:
 
 =12-MONTH(NOW())
 =IF(B41,_xlfn.GAUSS(C29),_xlfn.CONCAT(C23,D23))
+=IMEXP("1+i")
 =SUM($G$15:$G$16)
 =SUM(B13:B14)
 =SUM(B17:B18)
