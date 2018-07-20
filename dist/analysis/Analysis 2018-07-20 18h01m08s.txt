@@ -1,0 +1,31 @@
+
+------------------------------------------------
+Analysis of:        .\1.xlsx
+File size:          9
+Number of sheets:   1
+Cells total:        10
+Cells empty:        0
+Plain data:         0
+Functions:          10
+Unique functions:   10
+References:         0
+-> Calculated cells per data cell:    0
+-> Referencing cells per data cell:   0
+-> Redundancy of functions:           0%
+------------------------------------------------
+
+Unsupported functions found in sheet:
+
+
+Unique functions in alphabetical order:
+
+=SUM(B1,C1)
+=SUM(B10,C10)
+=SUM(B2,C2)
+=SUM(B3,C3)
+=SUM(B4,C4)
+=SUM(B5,C5)
+=SUM(B6,C6)
+=SUM(B7,C7)
+=SUM(B8,C8)
+=SUM(B9,C9)

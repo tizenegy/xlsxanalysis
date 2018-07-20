@@ -1,0 +1,21 @@
+
+------------------------------------------------
+Analysis of:        .\1.xlsx
+File size:          37
+Number of sheets:   1
+Cells total:        10000
+Cells empty:        10000
+Plain data:         0
+Functions:          0
+Unique functions:   0
+References:         0
+-> Calculated cells per data cell:    0
+-> Referencing cells per data cell:   0
+-> Redundancy of functions:           0%
+------------------------------------------------
+
+Unsupported functions found in sheet:
+
+
+Unique functions in alphabetical order:
+
