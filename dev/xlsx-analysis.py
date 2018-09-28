@@ -74,8 +74,10 @@ for sheet in wb.worksheets:
                     if "(" in content:
                         formulaCounter = formulaCounter+1
                         funcSet.add(content)
+                        testList.append(content)
 
 # calculate kpis
+testList = list()
 fileSize = int(os.path.getsize(excel)/1000)
 cellsEmpty = numberOfCells-cellNotEmptyCounter
 cellsPlainData = cellNotEmptyCounter-refCounter
@@ -124,8 +126,10 @@ for item in unsupSet:
     file.write(item+"\n")
 file.write("\n"+"Unique functions in alphabetical order:"+"\n"+"\n")
 
-for item in sorted(funcSet):
+for item in sorted(testList):
+#for item in sorted(funcSet):
     file.write(item+"\n")
+
 
 file.close()
 
